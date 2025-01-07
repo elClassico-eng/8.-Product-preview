@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | Product preview card component</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./ass/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <picture>
+                <source
+                    media="(max-width: 57.5rem)"
+                    srcset="./ass/images/image-product-mobile.jpg"
+                />
+                <img
+                    src="./ass/images/image-product-desktop.jpg"
+                    alt="Product image"
+                />
+            </picture>
+
+            <section class="card-description">
+                <span class="card-category">Perfume</span>
+
+                <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
+                <p>
+                    A floral, solar and voluptuous interpretation composed by
+                    Olivier Polge, Perfumer-Creator for the House of CHANEL.
+                </p>
+
+                <section class="card-footer">
+                    <div class="card-price">
+                        <ins class="price-current">$149.99</ins>
+                        <del class="price-old">$169.99</del>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="card-btn"
+                        aria-label="Add Gabrielle Essence Eau De Parfum to cart"
+                    >
+                        <img src="./ass/images/icon-cart.svg" alt="Cart Icon" />
+                        <span>Add to Cart</span>
+                    </button>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
